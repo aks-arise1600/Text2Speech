@@ -8,12 +8,13 @@ Text2Speech::Text2Speech(QWidget *parent)
     ui->setupUi(this);
 
     ui->comboBox_Language->addItems(strLangs);
+    ui->textEdit->setTextColor(QColor::fromRgb(240,255,255));
+    ui->textEdit->setTextBackgroundColor(QColor::fromRgb(25,25,112));
 
     speech = new QTextToSpeech;
     connect(speech, SIGNAL(stateChanged(QTextToSpeech::State)), this, SLOT(sl_stateChanged(QTextToSpeech::State)));
 
     m_ChangeLanguage(ui->comboBox_Language->currentIndex());
-
 
 }
 

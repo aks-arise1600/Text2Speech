@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Text2Speech</string>
+   <string>Text to Speech</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(9, 121, 105);
+color: rgb(246, 245, 244);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
